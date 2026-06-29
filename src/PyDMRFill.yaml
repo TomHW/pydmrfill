@@ -7,7 +7,7 @@ CP-Template: dt878uv2-sample.yaml   # Codeplug-Template file
 KEEP-ZONES: [Seefunk, C23-direkt]
 Zones:
   DL:
-    Mode: Load                  # Should be 'Default', 'Load' or 'Dump'
+    Mode: Dump                  # Should be 'Default', 'Load' or 'Dump'
     Country: Germany            # Country name is used for Repeatermap query, must match there
     Regions:                    # List of regions in given country
       VR:
@@ -27,7 +27,7 @@ Zones:
         Longitude: 11.8988321
         MaxDistance: 100
   SP:
-    Mode: Load
+    Mode: Dump
     Country: Poland
     Regions:
       Swinemuende:
@@ -35,7 +35,7 @@ Zones:
         Longitude: 14.2694135
         MaxDistance: 100
   OZ:
-    Mode: Load
+    Mode: Dump
     Country: Denmark
     Regions:
       Klintholm:
@@ -43,7 +43,7 @@ Zones:
         Longitude: 12.4666164
         MaxDistance: 100
   SM:
-    Mode: Load
+    Mode: Dump
     Country: Sweden
     Regions:
       Trelleborg:
@@ -51,10 +51,10 @@ Zones:
         Longitude: 13.2224797
         MaxDistance: 100    
   OE:
-    Mode: Load
+    Mode: Dump
     Country: Austria
     Regions:
-      Inzing:
+      Innsbruck:
         Latitude: 47.2713648
         Longitude: 11.1999975
         MaxDistance: 100    
