@@ -1,10 +1,9 @@
-User-Agent: OpenGD77 channel creator 0.1, <da1th@darc.de>
-API-Token: app_2249a9df2c487a78355aa194531f1d2ab7b307b0eeef3bf6fa13fef22f27b23c
+User-Agent: OpenGD77 channel creator 0.1, <mycallsign@darc.de>
+API-Token: app_mytoken
 FM-Bandwidth: Wide          # Default FM-Bandwidth if not defined (Small or Wide)
 TS1-TA: APRS                # Timeslot 1 DMR Talker Alias (Off, APRS, Text, APRS+Text)
 TS2-TA: APRS                # Timeslot 2 DMR Talker Alias (Off, APRS, Text, APRS+Text)
-CP-Template: dt878uv2-da1th-sample.yaml     # Codeplug-Template file
-#CP-Template: MD-9600-test.yaml     # Codeplug-Template file
+CP-Template: dt878uv2-sample.yaml     # Codeplug-Template file
 KEEP-ZONES: [Seefunk, C23-direkt]
 Zones:
   DL:
