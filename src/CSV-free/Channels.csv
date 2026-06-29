@@ -1,0 +1,48 @@
+Channel Number;Channel Name;Channel Type;Rx Frequency;Tx Frequency;Bandwidth (kHz);Colour Code;Timeslot;Contact;TG List;DMR ID;TS1_TA_Tx;TS2_TA_Tx ID;RX Tone;TX Tone;Squelch;Power;Rx Only;Zone Skip;All Skip;TOT;VOX;No Beep;No Eco;APRS;Latitude;Longitude
+1;Freenet 01;Analogue;	149,02500;	149,02500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+2;Freenet 02;Analogue;	149,03750;	149,03750;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+3;Freenet 03;Analogue;	149,05000;	149,05000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+4;Freenet 04;Analogue;	149,08750;	149,08750;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+5;Freenet 05;Analogue;	149,10000;	149,10000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+6;Freenet 06;Analogue;	149,11250;	149,11250;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,0336
+7;PMR 01;Analogue;	446,00625;	446,00625;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+8;PMR 02;Analogue;	446,01875;	446,01875;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+9;PMR 03;Analogue;	446,03125;	446,03125;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+10;PMR 04;Analogue;	446,04375;	446,04375;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+11;PMR 05;Analogue;	446,05625;	446,05625;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+12;PMR 06;Analogue;	446,06875;	446,06875;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+13;PMR 07;Analogue;	446,08125;	446,08125;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+14;PMR 08;Analogue;	446,09375;	446,09375;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+15;PMR 09;Analogue;	446,10625;	446,10625;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+16;PMR 10;Analogue;	446,11875;	446,11875;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+17;PMR 11;Analogue;	446,13125;	446,13125;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+18;PMR 12;Analogue;	446,14375;	446,14375;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+19;PMR 13;Analogue;	446,15625;	446,15625;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+20;PMR 14;Analogue;	446,16875;	446,16875;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+21;PMR 15;Analogue;	446,18125;	446,18125;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+22;PMR 16;Analogue;	446,19375;	446,19375;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,0592
+23;LPD 01;Analogue;	433,07500;	433,07500;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+24;LPD 02;Analogue;	433,10000;	433,10000;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+25;LPD 03;Analogue;	433,12500;	433,12500;12,5;;;;;;;;None;None;Disabled;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+26;LPD 04;Analogue;	433,15000;	433,15000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+27;LPD 05;Analogue;	433,17500;	433,17500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+28;LPD 06;Analogue;	433,20000;	433,20000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+29;LPD 07;Analogue;	433,22500;	433,22500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+30;LPD 08;Analogue;	433,25000;	433,25000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+31;LPD 09;Analogue;	433,27500;	433,27500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+32;LPD 10;Analogue;	433,30000;	433,30000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+33;LPD 11;Analogue;	433,32500;	433,32500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+34;LPD 12;Analogue;	433,35000;	433,35000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+35;LPD 13;Analogue;	433,37500;	433,37500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+36;LPD 14;Analogue;	433,40000;	433,40000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+37;LPD 15;Analogue;	433,42500;	433,42500;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+38;LPD 16;Analogue;	433,45000;	433,45000;12,5;;;;;;;;None;None;Disabled;Master;Yes;No;No;495;Off;No;No;None;0,128;0,008
+39;DMR Direkt 2m;Digital;	145,37500;	145,37500;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+40;DMR Anrufkanal;Digital;	433,45000;	433,45000;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+41;DMR Direkt K1;Digital;	433,61250;	433,61250;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+42;DMR Direkt K2;Digital;	433,62500;	433,62500;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+43;DMR Direkt K3;Digital;	433,63750;	433,63750;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+44;DMR Direkt K4;Digital;	433,65000;	433,65000;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+45;DMR Direkt K5;Digital;	433,66250;	433,66250;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+46;DMR Direkt K6;Digital;	433,67500;	433,67500;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008
+47;DMR Direkt K7;Digital;	433,68750;	433,68750;;1;1;allCall;None;None;Off;Off;;;;Master;No;No;No;495;Off;No;No;None;0,128;0,008

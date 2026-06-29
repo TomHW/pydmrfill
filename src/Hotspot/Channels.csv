@@ -1,0 +1,2 @@
+Channel Number;Channel Name;Channel Type;Rx Frequency;Tx Frequency;Bandwidth (kHz);Colour Code;Timeslot;Contact;TG List;DMR ID;TS1_TA_Tx;TS2_TA_Tx ID;RX Tone;TX Tone;Squelch;Power;Rx Only;Zone Skip;All Skip;TOT;VOX;No Beep;No Eco;APRS;Latitude;Longitude
+1;DA1TH-HS;Analogue;432,8;432,8;12,5;;;;;;;;136,5;136,5;Disabled;Master;Yes;No;No;495;Off;No;No;None;54,20385;12,81775
