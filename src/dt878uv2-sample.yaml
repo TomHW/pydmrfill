@@ -1,0 +1,2001 @@
+---
+version: 0.15.1
+settings:
+  power: High
+  defaultID: id1
+  boot:
+    display: Image
+    message1: Welcome
+    message2: here
+    passwordEnabled: false
+    password: ""
+    defaultChannel: false
+    allowFactoryReset: true
+  audio:
+    squelch: 1
+    dmrSquelch: none
+    micGain: 10
+    fmMicGain: 10
+    m17MicGain: none
+    maxSpeakerVolume: 10
+    maxHeadphoneVolume: 10
+    vox: off
+    voxDelay: 0
+    speech: false
+  tone:
+    silent: false
+    keyTone: 1
+    smsTone: true
+    ringtone: true
+    bootTone: true
+    bootMelody:
+      bpm: 100
+      melody: ""
+    talkPermit:
+      - None
+    callStart:
+      - Digital
+    callStartMelody:
+      bpm: 100
+      melody: f'16
+    callEnd:
+      - None
+    callEndMelody:
+      bpm: 100
+      melody: d''16 g'
+    channelIdle:
+      - None
+    channelIdleMelody:
+      bpm: 100
+      melody: fis''16 d'
+    callReset: true
+    callResetMelody:
+      bpm: 100
+      melody: ais''16 g'
+  gnss:
+    fixedPositionEnabled: false
+    fixedPosition: OM44jf92
+    systems:
+      - GPS
+      - Glonass
+      - Beidou
+    units: Metric
+  dmr:
+    privateCallMatch: true
+    groupCallMatch: true
+    privateCallHangTime: 5 s
+    groupCallHangTime: 5 s
+    sendTalkerAlias: true
+    talkerAliasEncoding: Iso8
+    preamble: 100 ms
+  anytone:
+    subChannel: true
+    selectedVFO: B
+    modeA: Memory
+    modeB: Memory
+    vfoScanType: Carrier
+    minVFOScanFrequencyUHF: 400 MHz
+    maxVFOScanFrequencyUHF: 520 MHz
+    minVFOScanFrequencyVHF: 136 MHz
+    maxVFOScanFrequencyVHF: 174 MHz
+    keepLastCaller: false
+    vfoStep: 12.5 kHz
+    steType: Off
+    steFrequency: 259.19999999999999
+    steDuration: 260 ms
+    tbstFrequency: 1750 Hz
+    proMode: false
+    maintainCallChannel: true
+    fan: Temperature
+    bootSettings:
+      gpsCheck: false
+    powerSaveSettings:
+      autoShutdown: 0
+      resetAutoShutdownOnCall: false
+      powerSave: Save50
+      atpc: true
+    keySettings:
+      funcKey1Short: ToggleMainChannel
+      funcKey1Long: ToggleVFO
+      funcKey2Short: ToggleVFO
+      funcKey2Long: Off
+      funcKey3Short: Power
+      funcKey3Long: Record
+      funcKey4Short: Repeater
+      funcKey4Long: SMS
+      funcKey5Short: Reverse
+      funcKey5Long: Dial
+      funcKey6Short: Encryption
+      funcKey6Long: Off
+      funcKeyAShort: Slot
+      funcKeyALong: Voltage
+      funcKeyAVeryLong: Off
+      funcKeyBShort: Monitor
+      funcKeyBLong: Call
+      funcKeyBVeryLong: Off
+      funcKeyCShort: Alarm
+      funcKeyCLong: VOX
+      funcKeyDShort: Off
+      funcKeyDLong: Off
+      funcKnobShort: Off
+      funcKnobLong: Off
+      longPressDuration: 2 s
+      upDownKeys: Channel
+      autoKeyLock: false
+      knobLock: true
+      keypadLock: true
+      sideKeysLock: true
+      forcedKeyLock: false
+    toneSettings:
+      tot: true
+      wxAlarm: false
+    displaySettings:
+      displayFrequency: false
+      brightness: 10
+      backlightDuration: 30 s
+      backlightDurationTX: 0
+      backlightDurationRX: 239 s
+      customChannelBackground: false
+      volumeChangePrompt: true
+      callEndPrompt: false
+      showClock: true
+      showCall: false
+      showContact: false
+      showChannelNumber: false
+      showGLobalChannelNumber: false
+      showColorCode: true
+      showTimeSlot: true
+      showChannelType: true
+      showLastHeard: true
+      lastCallerDisplay: Both
+      callColor: White
+      standbyTextColor: White
+      standbyBackgroundColor: Black
+      channelNameColor: White
+      channelBNameColor: White
+      zoneNameColor: White
+      zoneBNameColor: White
+      language: German
+      dateFormat: YearFirst
+    audioSettings:
+      voxSource: Both
+      recording: false
+      enhance: true
+      muteDelay: 1 min
+      speaker: Radio
+      handsetSpeaker: MainChannel
+      handsetType: Anytone
+    menuSettings:
+      duration: 30 s
+      separator: true
+    autoRepeaterSettings:
+      directionA: Off
+      directionB: Off
+      vhfMin: 136 MHz
+      vhfMax: 174 MHz
+      uhfMin: 400 MHz
+      uhfMax: 480 MHz
+      vhf: off1
+      uhf: off2
+      vhf2Min: 136 MHz
+      vhf2Max: 174 MHz
+      uhf2Min: 400 MHz
+      uhf2Max: 480 MHz
+      vhf2: off1
+      uhf2: off2
+      offsets:
+        - id: off1
+          name: 600 kHz offset
+          offset: 600 kHz
+        - id: off2
+          name: 5000 kHz offset
+          offset: 5000 kHz
+    dmrSettings:
+      manualGroupCallHangTime: 6 s
+      manualPrivateCallHangTime: 6 s
+      wakeHeadPeriod: 100 ms
+      filterOwnID: true
+      monitorSlotMatch: Both
+      monitorColorCodeMatch: false
+      monitorIDMatch: false
+      monitorTimeSlotHold: true
+      talkerAliasSource: UserDB
+      encryption: AES
+    gpsSettings:
+      timeZone: UTC+02
+      reportPosition: true
+      updatePeriod: 5 s
+    roamingSettings:
+      autoRoam: false
+      autoRoamPeriod: 0
+      autoRoamDelay: 0
+      roamStart: Periodic
+      roamReturn: Periodic
+      rangeCheck: false
+      checkInterval: 25 s
+      retryCount: 2
+      outOfRangeAlert: None
+      notification: true
+      notificationCount: 3
+      defaultZone: roam1
+      gpsRoaming: false
+    bluetoothSettings:
+      enabled: false
+      pttLatch: false
+      pttSleepTimer: 0
+      internalMic: false
+      internalSpeaker: false
+      micGain: 0
+      speakerGain: 0
+      hold: 0
+      holdDelay: 0
+      handset:
+        shutdown: true
+        volumeLevelA: 0
+        volumeLevelB: 0
+        micGain: 1
+        squelch: 1
+        txNoiseReduction: 10
+        voxLevel: 0
+        voxDelay: 0
+        funcKeyAShort: Off
+        funcKeyBShort: Off
+        funcKeyCShort: Off
+        funcKeyALong: Off
+        funcKeyBLong: Off
+        funcKeyCLong: Off
+        funcKeyAVeryLong: Off
+        funcKeyBVeryLong: Off
+        funcKeyCVeryLong: Off
+        backlight: 30 s
+    repeaterSettings:
+      enabled: false
+      monitor: false
+      timeSlot: Channel
+      secTimeSlot: Channel
+      colorCode: Ignored
+    satelliteSettings:
+      power: High
+      squelch: 0
+  tot: 5 min
+radioIDs:
+  - dmr: {id: id1, name: myCall, number: 12345678}
+contacts:
+  - dmr: {id: cont1, name: Region Muenchen, ring: false, type: GroupCall, number: 26283, anytone: {alertType: None}}
+  - dmr: {id: cont2, name: Oberbayern, ring: false, type: GroupCall, number: 26285, anytone: {alertType: None}}
+  - dmr: {id: cont3, name: Bayern, ring: false, type: GroupCall, number: 2628, anytone: {alertType: None}}
+  - dmr: {id: cont4, name: Mecklenburg - Vo, ring: false, type: GroupCall, number: 26217, anytone: {alertType: None}}
+  - dmr: {id: cont5, name: Sachsen-Anhalt/M, ring: false, type: GroupCall, number: 2620, anytone: {alertType: None}}
+  - dmr: {id: cont6, name: 8 Regional, ring: false, type: GroupCall, number: 8, anytone: {alertType: None}}
+  - dmr: {id: cont7, name: 9 Local, ring: false, type: GroupCall, number: 9, anytone: {alertType: None}}
+  - dmr: {id: cont8, name: 1 WW, ring: false, type: GroupCall, number: 1, anytone: {alertType: None}}
+  - dmr: {id: cont9, name: 2 Europa, ring: false, type: GroupCall, number: 2, anytone: {alertType: None}}
+  - dmr: {id: cont10, name: 3 Nord-Amerika, ring: false, type: GroupCall, number: 3, anytone: {alertType: None}}
+  - dmr: {id: cont11, name: V-6 DL-MultiNe, ring: false, type: GroupCall, number: 6, anytone: {alertType: None}}
+  - dmr: {id: cont12, name: 20 DACH, ring: false, type: GroupCall, number: 20, anytone: {alertType: None}}
+  - dmr: {id: cont13, name: 23 europaweit E, ring: false, type: GroupCall, number: 23, anytone: {alertType: None}}
+  - dmr: {id: cont14, name: World-wide, ring: false, type: GroupCall, number: 91, anytone: {alertType: None}}
+  - dmr: {id: cont15, name: Europe, ring: false, type: GroupCall, number: 92, anytone: {alertType: None}}
+  - dmr: {id: cont16, name: North America, ring: false, type: GroupCall, number: 93, anytone: {alertType: None}}
+  - dmr: {id: cont17, name: "Asia, Middle Eas", ring: false, type: GroupCall, number: 94, anytone: {alertType: None}}
+  - dmr: {id: cont18, name: "Australia, New Z", ring: false, type: GroupCall, number: 95, anytone: {alertType: None}}
+  - dmr: {id: cont19, name: Radio Test, ring: false, type: GroupCall, number: 98, anytone: {alertType: None}}
+  - dmr: {id: cont20, name: TG99, ring: false, type: GroupCall, number: 99, anytone: {alertType: None}}
+  - dmr: {id: cont21, name: Switzerland, ring: false, type: GroupCall, number: 228, anytone: {alertType: None}}
+  - dmr: {id: cont22, name: Austria, ring: false, type: GroupCall, number: 232, anytone: {alertType: None}}
+  - dmr: {id: cont23, name: Deutschland, ring: false, type: GroupCall, number: 262, anytone: {alertType: None}}
+  - dmr: {id: cont24, name: MultiMode DL, ring: false, type: GroupCall, number: 263, anytone: {alertType: None}}
+  - dmr: {id: cont25, name: DL OPS, ring: false, type: GroupCall, number: 264, anytone: {alertType: None}}
+  - dmr: {id: cont26, name: 265, ring: false, type: GroupCall, number: 265, anytone: {alertType: None}}
+  - dmr: {id: cont27, name: WW Tac 1, ring: false, type: GroupCall, number: 901, anytone: {alertType: None}}
+  - dmr: {id: cont28, name: WW Tac 2, ring: false, type: GroupCall, number: 902, anytone: {alertType: None}}
+  - dmr: {id: cont29, name: WW Tac 3, ring: false, type: GroupCall, number: 903, anytone: {alertType: None}}
+  - dmr: {id: cont30, name: JOTA, ring: false, type: GroupCall, number: 907, anytone: {alertType: None}}
+  - dmr: {id: cont31, name: German, ring: false, type: GroupCall, number: 910, anytone: {alertType: None}}
+  - dmr: {id: cont32, name: English, ring: false, type: GroupCall, number: 913, anytone: {alertType: None}}
+  - dmr: {id: cont33, name: Spanish, ring: false, type: GroupCall, number: 914, anytone: {alertType: None}}
+  - dmr: {id: cont34, name: Portuguese, ring: false, type: GroupCall, number: 915, anytone: {alertType: None}}
+  - dmr: {id: cont35, name: Italian, ring: false, type: GroupCall, number: 916, anytone: {alertType: None}}
+  - dmr: {id: cont36, name: YOTA, ring: false, type: GroupCall, number: 918, anytone: {alertType: None}}
+  - dmr: {id: cont37, name: "DL, OE, HB9", ring: false, type: GroupCall, number: 920, anytone: {alertType: None}}
+  - dmr: {id: cont38, name: Dutch, ring: false, type: GroupCall, number: 922, anytone: {alertType: None}}
+  - dmr: {id: cont39, name: European English, ring: false, type: GroupCall, number: 923, anytone: {alertType: None}}
+  - dmr: {id: cont40, name: Swedish, ring: false, type: GroupCall, number: 924, anytone: {alertType: None}}
+  - dmr: {id: cont41, name: Nordic, ring: false, type: GroupCall, number: 927, anytone: {alertType: None}}
+  - dmr: {id: cont42, name: PanHellenic Chat, ring: false, type: GroupCall, number: 930, anytone: {alertType: None}}
+  - dmr: {id: cont43, name: Francophonie, ring: false, type: GroupCall, number: 937, anytone: {alertType: None}}
+  - dmr: {id: cont44, name: Arabic, ring: false, type: GroupCall, number: 940, anytone: {alertType: None}}
+  - dmr: {id: cont45, name: WWYL, ring: false, type: GroupCall, number: 955, anytone: {alertType: None}}
+  - dmr: {id: cont46, name: DMR-Caribbean, ring: false, type: GroupCall, number: 969, anytone: {alertType: None}}
+  - dmr: {id: cont47, name: Basque, ring: false, type: GroupCall, number: 971, anytone: {alertType: None}}
+  - dmr: {id: cont48, name: SOTA, ring: false, type: GroupCall, number: 973, anytone: {alertType: None}}
+  - dmr: {id: cont49, name: Schweiz Deutsch, ring: false, type: GroupCall, number: 2280, anytone: {alertType: None}}
+  - dmr: {id: cont50, name: Suisse Romande, ring: false, type: GroupCall, number: 2281, anytone: {alertType: None}}
+  - dmr: {id: cont51, name: Valais / Wallis, ring: false, type: GroupCall, number: 2282, anytone: {alertType: None}}
+  - dmr: {id: cont52, name: Bern / Solothurn, ring: false, type: GroupCall, number: 2283, anytone: {alertType: None}}
+  - dmr: {id: cont53, name: Basel, ring: false, type: GroupCall, number: 2284, anytone: {alertType: None}}
+  - dmr: {id: cont54, name: Aargau / Zentral, ring: false, type: GroupCall, number: 2285, anytone: {alertType: None}}
+  - dmr: {id: cont55, name: Ticino, ring: false, type: GroupCall, number: 2286, anytone: {alertType: None}}
+  - dmr: {id: cont56, name: Graubuenden, ring: false, type: GroupCall, number: 2287, anytone: {alertType: None}}
+  - dmr: {id: cont57, name: Zuerich, ring: false, type: GroupCall, number: 2288, anytone: {alertType: None}}
+  - dmr: {id: cont58, name: Ostschweiz, ring: false, type: GroupCall, number: 2289, anytone: {alertType: None}}
+  - dmr: {id: cont59, name: OE-Master, ring: false, type: GroupCall, number: 2320, anytone: {alertType: None}}
+  - dmr: {id: cont60, name: Wien, ring: false, type: GroupCall, number: 2321, anytone: {alertType: None}}
+  - dmr: {id: cont61, name: Salzburg, ring: false, type: GroupCall, number: 2322, anytone: {alertType: None}}
+  - dmr: {id: cont62, name: Niederoesterreic, ring: false, type: GroupCall, number: 2323, anytone: {alertType: None}}
+  - dmr: {id: cont63, name: Burgenland, ring: false, type: GroupCall, number: 2324, anytone: {alertType: None}}
+  - dmr: {id: cont64, name: Oberoesterreich, ring: false, type: GroupCall, number: 2325, anytone: {alertType: None}}
+  - dmr: {id: cont65, name: Steiermark, ring: false, type: GroupCall, number: 2326, anytone: {alertType: None}}
+  - dmr: {id: cont66, name: Tirol, ring: false, type: GroupCall, number: 2327, anytone: {alertType: None}}
+  - dmr: {id: cont67, name: Kaernten, ring: false, type: GroupCall, number: 2328, anytone: {alertType: None}}
+  - dmr: {id: cont68, name: Vorarlberg, ring: false, type: GroupCall, number: 2329, anytone: {alertType: None}}
+  - dmr: {id: cont69, name: Berlin/Brandenbu, ring: false, type: GroupCall, number: 2621, anytone: {alertType: None}}
+  - dmr: {id: cont70, name: Hamburg/Schleswi, ring: false, type: GroupCall, number: 2622, anytone: {alertType: None}}
+  - dmr: {id: cont71, name: Niedersachsen/Br, ring: false, type: GroupCall, number: 2623, anytone: {alertType: None}}
+  - dmr: {id: cont72, name: Nordrhein-Westfa, ring: false, type: GroupCall, number: 2624, anytone: {alertType: None}}
+  - dmr: {id: cont73, name: Rheinland-Pfalz/, ring: false, type: GroupCall, number: 2625, anytone: {alertType: None}}
+  - dmr: {id: cont74, name: Hessen, ring: false, type: GroupCall, number: 2626, anytone: {alertType: None}}
+  - dmr: {id: cont75, name: Baden-Wuerttembe, ring: false, type: GroupCall, number: 2627, anytone: {alertType: None}}
+  - dmr: {id: cont76, name: Sachsen/Thuering, ring: false, type: GroupCall, number: 2629, anytone: {alertType: None}}
+  - dmr: {id: cont77, name: Disconnect, ring: false, type: GroupCall, number: 4000, anytone: {alertType: None}}
+  - dmr: {id: cont78, name: 5000 Status, ring: false, type: GroupCall, number: 5000, anytone: {alertType: None}}
+  - dmr: {id: cont79, name: JOTA Tac 1, ring: false, type: GroupCall, number: 9071, anytone: {alertType: None}}
+  - dmr: {id: cont80, name: JOTA Tac 2, ring: false, type: GroupCall, number: 9072, anytone: {alertType: None}}
+  - dmr: {id: cont81, name: JOTA Tac 3, ring: false, type: GroupCall, number: 9073, anytone: {alertType: None}}
+  - dmr: {id: cont82, name: JOTA Tac 4, ring: false, type: GroupCall, number: 9074, anytone: {alertType: None}}
+  - dmr: {id: cont83, name: JOTA Tac 5, ring: false, type: GroupCall, number: 9075, anytone: {alertType: None}}
+  - dmr: {id: cont84, name: JOTA Tac 6, ring: false, type: GroupCall, number: 9076, anytone: {alertType: None}}
+  - dmr: {id: cont85, name: JOTA Tac 7, ring: false, type: GroupCall, number: 9077, anytone: {alertType: None}}
+  - dmr: {id: cont86, name: JOTA Tac 8, ring: false, type: GroupCall, number: 9078, anytone: {alertType: None}}
+  - dmr: {id: cont87, name: Worldwide Mariti, ring: false, type: GroupCall, number: 9101, anytone: {alertType: None}}
+  - dmr: {id: cont88, name: Worldwide Aviati, ring: false, type: GroupCall, number: 9102, anytone: {alertType: None}}
+  - dmr: {id: cont89, name: XRF007 B, ring: false, type: GroupCall, number: 9107, anytone: {alertType: None}}
+  - dmr: {id: cont90, name: Emcom EU, ring: false, type: GroupCall, number: 9112, anytone: {alertType: None}}
+  - dmr: {id: cont91, name: EURAO, ring: false, type: GroupCall, number: 9201, anytone: {alertType: None}}
+  - dmr: {id: cont92, name: Francophonie C4F, ring: false, type: GroupCall, number: 9371, anytone: {alertType: None}}
+  - dmr: {id: cont93, name: ATV Talk, ring: false, type: GroupCall, number: 9410, anytone: {alertType: None}}
+  - dmr: {id: cont94, name: ICQ Podcast, ring: false, type: GroupCall, number: 9480, anytone: {alertType: None}}
+  - dmr: {id: cont95, name: Collegiate, ring: false, type: GroupCall, number: 9500, anytone: {alertType: None}}
+  - dmr: {id: cont96, name: Cafe Gratis, ring: false, type: GroupCall, number: 9800, anytone: {alertType: None}}
+  - dmr: {id: cont97, name: Emcom US, ring: false, type: GroupCall, number: 9911, anytone: {alertType: None}}
+  - dmr: {id: cont98, name: BM Echo PC, ring: false, type: GroupCall, number: 9990, anytone: {alertType: None}}
+  - dmr: {id: cont99, name: UA 1, ring: false, type: GroupCall, number: 22801, anytone: {alertType: None}}
+  - dmr: {id: cont100, name: UA 2, ring: false, type: GroupCall, number: 22802, anytone: {alertType: None}}
+  - dmr: {id: cont101, name: UA 3, ring: false, type: GroupCall, number: 22803, anytone: {alertType: None}}
+  - dmr: {id: cont102, name: UA 4, ring: false, type: GroupCall, number: 22804, anytone: {alertType: None}}
+  - dmr: {id: cont103, name: HB9-BM-WIRESX, ring: false, type: GroupCall, number: 22810, anytone: {alertType: None}}
+  - dmr: {id: cont104, name: Vaud, ring: false, type: GroupCall, number: 22811, anytone: {alertType: None}}
+  - dmr: {id: cont105, name: Geneve, ring: false, type: GroupCall, number: 22812, anytone: {alertType: None}}
+  - dmr: {id: cont106, name: Alpes Vaudoises, ring: false, type: GroupCall, number: 22813, anytone: {alertType: None}}
+  - dmr: {id: cont107, name: Alpes Valaisanne, ring: false, type: GroupCall, number: 22814, anytone: {alertType: None}}
+  - dmr: {id: cont108, name: Neuchatel, ring: false, type: GroupCall, number: 22815, anytone: {alertType: None}}
+  - dmr: {id: cont109, name: Fribourg, ring: false, type: GroupCall, number: 22817, anytone: {alertType: None}}
+  - dmr: {id: cont110, name: Swiss-Italiana, ring: false, type: GroupCall, number: 22860, anytone: {alertType: None}}
+  - dmr: {id: cont111, name: Poschiavo, ring: false, type: GroupCall, number: 22877, anytone: {alertType: None}}
+  - dmr: {id: cont112, name: TAC 1 Austria, ring: false, type: GroupCall, number: 23200, anytone: {alertType: None}}
+  - dmr: {id: cont113, name: Suedtirol, ring: false, type: GroupCall, number: 23207, anytone: {alertType: None}}
+  - dmr: {id: cont114, name: P25 Austria, ring: false, type: GroupCall, number: 23225, anytone: {alertType: None}}
+  - dmr: {id: cont115, name: Vorarlberg Tech, ring: false, type: GroupCall, number: 23229, anytone: {alertType: None}}
+  - dmr: {id: cont116, name: BM OE, ring: false, type: GroupCall, number: 23290, anytone: {alertType: None}}
+  - dmr: {id: cont117, name: TAC 2 Austria, ring: false, type: GroupCall, number: 23299, anytone: {alertType: None}}
+  - dmr: {id: cont118, name: TAC 1, ring: false, type: GroupCall, number: 26200, anytone: {alertType: None}}
+  - dmr: {id: cont119, name: DL Maritime, ring: false, type: GroupCall, number: 26201, anytone: {alertType: None}}
+  - dmr: {id: cont120, name: DL Aeronautical, ring: false, type: GroupCall, number: 26202, anytone: {alertType: None}}
+  - dmr: {id: cont121, name: Sachsen-Anhalt, ring: false, type: GroupCall, number: 26207, anytone: {alertType: None}}
+  - dmr: {id: cont122, name: Brandenburg, ring: false, type: GroupCall, number: 26209, anytone: {alertType: None}}
+  - dmr: {id: cont123, name: OV F11 Bad Hombu, ring: false, type: GroupCall, number: 26211, anytone: {alertType: None}}
+  - dmr: {id: cont124, name: Berlin-City, ring: false, type: GroupCall, number: 26212, anytone: {alertType: None}}
+  - dmr: {id: cont125, name: Grossraum Hambur, ring: false, type: GroupCall, number: 26220, anytone: {alertType: None}}
+  - dmr: {id: cont126, name: Hamburg-City, ring: false, type: GroupCall, number: 26221, anytone: {alertType: None}}
+  - dmr: {id: cont127, name: Ostholstein-Nord, ring: false, type: GroupCall, number: 26222, anytone: {alertType: None}}
+  - dmr: {id: cont128, name: Chaoswelle, ring: false, type: GroupCall, number: 26223, anytone: {alertType: None}}
+  - dmr: {id: cont129, name: Elbe-Weser, ring: false, type: GroupCall, number: 26224, anytone: {alertType: None}}
+  - dmr: {id: cont130, name: AFU-Nord, ring: false, type: GroupCall, number: 26225, anytone: {alertType: None}}
+  - dmr: {id: cont131, name: "DMR Netzverbund ", ring: false, type: GroupCall, number: 26226, anytone: {alertType: None}}
+  - dmr: {id: cont132, name: "DMR Netzverbund ", ring: false, type: GroupCall, number: 26227, anytone: {alertType: None}}
+  - dmr: {id: cont133, name: Ostholstein-Sued, ring: false, type: GroupCall, number: 26228, anytone: {alertType: None}}
+  - dmr: {id: cont134, name: Suedholstein, ring: false, type: GroupCall, number: 26229, anytone: {alertType: None}}
+  - dmr: {id: cont135, name: Region Hannover, ring: false, type: GroupCall, number: 26230, anytone: {alertType: None}}
+  - dmr: {id: cont136, name: NI Mitte, ring: false, type: GroupCall, number: 26231, anytone: {alertType: None}}
+  - dmr: {id: cont137, name: Dreilaendereck M, ring: false, type: GroupCall, number: 26232, anytone: {alertType: None}}
+  - dmr: {id: cont138, name: TAC 3, ring: false, type: GroupCall, number: 26233, anytone: {alertType: None}}
+  - dmr: {id: cont139, name: NI-Sued, ring: false, type: GroupCall, number: 26234, anytone: {alertType: None}}
+  - dmr: {id: cont140, name: NI Suedheide, ring: false, type: GroupCall, number: 26235, anytone: {alertType: None}}
+  - dmr: {id: cont141, name: NI-Nord, ring: false, type: GroupCall, number: 26236, anytone: {alertType: None}}
+  - dmr: {id: cont142, name: Nordsee, ring: false, type: GroupCall, number: 26237, anytone: {alertType: None}}
+  - dmr: {id: cont143, name: G38 - Wegberg, ring: false, type: GroupCall, number: 26238, anytone: {alertType: None}}
+  - dmr: {id: cont144, name: NI Ost, ring: false, type: GroupCall, number: 26239, anytone: {alertType: None}}
+  - dmr: {id: cont145, name: Rheinland, ring: false, type: GroupCall, number: 26241, anytone: {alertType: None}}
+  - dmr: {id: cont146, name: Muensterland, ring: false, type: GroupCall, number: 26242, anytone: {alertType: None}}
+  - dmr: {id: cont147, name: Ruhrgebiet, ring: false, type: GroupCall, number: 26243, anytone: {alertType: None}}
+  - dmr: {id: cont148, name: Separee D/ME, ring: false, type: GroupCall, number: 26244, anytone: {alertType: None}}
+  - dmr: {id: cont149, name: Rheinland-Sued, ring: false, type: GroupCall, number: 26245, anytone: {alertType: None}}
+  - dmr: {id: cont150, name: Niederrhein, ring: false, type: GroupCall, number: 26246, anytone: {alertType: None}}
+  - dmr: {id: cont151, name: DG Velbert, ring: false, type: GroupCall, number: 26247, anytone: {alertType: None}}
+  - dmr: {id: cont152, name: N16 Rheine, ring: false, type: GroupCall, number: 26248, anytone: {alertType: None}}
+  - dmr: {id: cont153, name: IGFS IG Funk Sie, ring: false, type: GroupCall, number: 26249, anytone: {alertType: None}}
+  - dmr: {id: cont154, name: Saarland, ring: false, type: GroupCall, number: 26250, anytone: {alertType: None}}
+  - dmr: {id: cont155, name: Westpfalz, ring: false, type: GroupCall, number: 26253, anytone: {alertType: None}}
+  - dmr: {id: cont156, name: Westerwald, ring: false, type: GroupCall, number: 26254, anytone: {alertType: None}}
+  - dmr: {id: cont157, name: Kaiserslautern, ring: false, type: GroupCall, number: 26255, anytone: {alertType: None}}
+  - dmr: {id: cont158, name: Eifel-Hunsrueck, ring: false, type: GroupCall, number: 26256, anytone: {alertType: None}}
+  - dmr: {id: cont159, name: Siegerland, ring: false, type: GroupCall, number: 26257, anytone: {alertType: None}}
+  - dmr: {id: cont160, name: Trier-Saarburg, ring: false, type: GroupCall, number: 26259, anytone: {alertType: None}}
+  - dmr: {id: cont161, name: Mittelhessen, ring: false, type: GroupCall, number: 26260, anytone: {alertType: None}}
+  - dmr: {id: cont162, name: Nordhessen, ring: false, type: GroupCall, number: 26261, anytone: {alertType: None}}
+  - dmr: {id: cont163, name: Rhein-Main-Necka, ring: false, type: GroupCall, number: 26262, anytone: {alertType: None}}
+  - dmr: {id: cont164, name: Bergstrasse, ring: false, type: GroupCall, number: 26263, anytone: {alertType: None}}
+  - dmr: {id: cont165, name: Odenwald, ring: false, type: GroupCall, number: 26264, anytone: {alertType: None}}
+  - dmr: {id: cont166, name: Taunus, ring: false, type: GroupCall, number: 26265, anytone: {alertType: None}}
+  - dmr: {id: cont167, name: TAC 4, ring: false, type: GroupCall, number: 26266, anytone: {alertType: None}}
+  - dmr: {id: cont168, name: TETRA Nordhessen, ring: false, type: GroupCall, number: 26267, anytone: {alertType: None}}
+  - dmr: {id: cont169, name: Hessen-RLP multi, ring: false, type: GroupCall, number: 26269, anytone: {alertType: None}}
+  - dmr: {id: cont170, name: Stuttgart, ring: false, type: GroupCall, number: 26270, anytone: {alertType: None}}
+  - dmr: {id: cont171, name: Baden, ring: false, type: GroupCall, number: 26271, anytone: {alertType: None}}
+  - dmr: {id: cont172, name: Neckar-Odenwald, ring: false, type: GroupCall, number: 26272, anytone: {alertType: None}}
+  - dmr: {id: cont173, name: BW-Ostalb, ring: false, type: GroupCall, number: 26273, anytone: {alertType: None}}
+  - dmr: {id: cont174, name: BW-Boeblingen, ring: false, type: GroupCall, number: 26274, anytone: {alertType: None}}
+  - dmr: {id: cont175, name: Schwarzwald-Nord, ring: false, type: GroupCall, number: 26275, anytone: {alertType: None}}
+  - dmr: {id: cont176, name: Neckar-Alb, ring: false, type: GroupCall, number: 26276, anytone: {alertType: None}}
+  - dmr: {id: cont177, name: Schwarzwald, ring: false, type: GroupCall, number: 26277, anytone: {alertType: None}}
+  - dmr: {id: cont178, name: BW Herrenberg, ring: false, type: GroupCall, number: 26278, anytone: {alertType: None}}
+  - dmr: {id: cont179, name: BW-Mittlerer-Nec, ring: false, type: GroupCall, number: 26279, anytone: {alertType: None}}
+  - dmr: {id: cont180, name: Niederbayern, ring: false, type: GroupCall, number: 26280, anytone: {alertType: None}}
+  - dmr: {id: cont181, name: Schwaben, ring: false, type: GroupCall, number: 26282, anytone: {alertType: None}}
+  - dmr: {id: cont182, name: Region Franken, ring: false, type: GroupCall, number: 26284, anytone: {alertType: None}}
+  - dmr: {id: cont183, name: Coburg-Rennsteig, ring: false, type: GroupCall, number: 26286, anytone: {alertType: None}}
+  - dmr: {id: cont184, name: Allgaeu-Bodensee, ring: false, type: GroupCall, number: 26287, anytone: {alertType: None}}
+  - dmr: {id: cont185, name: Region Bayern Ob, ring: false, type: GroupCall, number: 26288, anytone: {alertType: None}}
+  - dmr: {id: cont186, name: Oberpfalz, ring: false, type: GroupCall, number: 26289, anytone: {alertType: None}}
+  - dmr: {id: cont187, name: Frankenwelle, ring: false, type: GroupCall, number: 26290, anytone: {alertType: None}}
+  - dmr: {id: cont188, name: Weimar, ring: false, type: GroupCall, number: 26296, anytone: {alertType: None}}
+  - dmr: {id: cont189, name: Dresden, ring: false, type: GroupCall, number: 26297, anytone: {alertType: None}}
+  - dmr: {id: cont190, name: Thueringen, ring: false, type: GroupCall, number: 26298, anytone: {alertType: None}}
+  - dmr: {id: cont191, name: TAC 2, ring: false, type: GroupCall, number: 26299, anytone: {alertType: None}}
+  - dmr: {id: cont192, name: Sachsen-Erzgebir, ring: false, type: GroupCall, number: 26301, anytone: {alertType: None}}
+  - dmr: {id: cont193, name: Leipzig, ring: false, type: GroupCall, number: 26302, anytone: {alertType: None}}
+  - dmr: {id: cont194, name: OV D22 Soziale M, ring: false, type: GroupCall, number: 26322, anytone: {alertType: None}}
+  - dmr: {id: cont195, name: NI Mitte, ring: false, type: GroupCall, number: 26331, anytone: {alertType: None}}
+  - dmr: {id: cont196, name: funkforum.com, ring: false, type: GroupCall, number: 26333, anytone: {alertType: None}}
+  - dmr: {id: cont197, name: Funknetz-Celle, ring: false, type: GroupCall, number: 26334, anytone: {alertType: None}}
+  - dmr: {id: cont198, name: afu38, ring: false, type: GroupCall, number: 26338, anytone: {alertType: None}}
+  - dmr: {id: cont199, name: Magdeburg, ring: false, type: GroupCall, number: 26339, anytone: {alertType: None}}
+  - dmr: {id: cont200, name: Paderborn, ring: false, type: GroupCall, number: 26345, anytone: {alertType: None}}
+  - dmr: {id: cont201, name: Ostwestfalen-Lip, ring: false, type: GroupCall, number: 26346, anytone: {alertType: None}}
+  - dmr: {id: cont202, name: IGA Rhein-Erft, ring: false, type: GroupCall, number: 26347, anytone: {alertType: None}}
+  - dmr: {id: cont203, name: Westmuensterland, ring: false, type: GroupCall, number: 26348, anytone: {alertType: None}}
+  - dmr: {id: cont204, name: Hochsauerland, ring: false, type: GroupCall, number: 26349, anytone: {alertType: None}}
+  - dmr: {id: cont205, name: Agfaa, ring: false, type: GroupCall, number: 26355, anytone: {alertType: None}}
+  - dmr: {id: cont206, name: P62 Virt. Wuertt, ring: false, type: GroupCall, number: 26362, anytone: {alertType: None}}
+  - dmr: {id: cont207, name: Ulm / Donau, ring: false, type: GroupCall, number: 26370, anytone: {alertType: None}}
+  - dmr: {id: cont208, name: Schwarzwald-Baar, ring: false, type: GroupCall, number: 26371, anytone: {alertType: None}}
+  - dmr: {id: cont209, name: ARIG-MN, ring: false, type: GroupCall, number: 26374, anytone: {alertType: None}}
+  - dmr: {id: cont210, name: Bodensee-Obersch, ring: false, type: GroupCall, number: 26375, anytone: {alertType: None}}
+  - dmr: {id: cont211, name: Ortenau, ring: false, type: GroupCall, number: 26377, anytone: {alertType: None}}
+  - dmr: {id: cont212, name: Hochrhein, ring: false, type: GroupCall, number: 26379, anytone: {alertType: None}}
+  - dmr: {id: cont213, name: Schrobenhausen, ring: false, type: GroupCall, number: 26384, anytone: {alertType: None}}
+  - dmr: {id: cont214, name: Jura, ring: false, type: GroupCall, number: 26385, anytone: {alertType: None}}
+  - dmr: {id: cont215, name: Suedostbayern, ring: false, type: GroupCall, number: 26386, anytone: {alertType: None}}
+  - dmr: {id: cont216, name: Cham, ring: false, type: GroupCall, number: 26387, anytone: {alertType: None}}
+  - dmr: {id: cont217, name: Region Bayern Ch, ring: false, type: GroupCall, number: 26388, anytone: {alertType: None}}
+  - dmr: {id: cont218, name: Neumarkt, ring: false, type: GroupCall, number: 26390, anytone: {alertType: None}}
+  - dmr: {id: cont219, name: Metropolregion N, ring: false, type: GroupCall, number: 26391, anytone: {alertType: None}}
+  - dmr: {id: cont220, name: Raute, ring: false, type: GroupCall, number: 26395, anytone: {alertType: None}}
+  - dmr: {id: cont221, name: C4FM DL-Hamburg, ring: false, type: GroupCall, number: 26421, anytone: {alertType: None}}
+  - dmr: {id: cont222, name: DL-Nordwest, ring: false, type: GroupCall, number: 26429, anytone: {alertType: None}}
+  - dmr: {id: cont223, name: Eder-Lahn, ring: false, type: GroupCall, number: 26439, anytone: {alertType: None}}
+  - dmr: {id: cont224, name: Inselfreunde, ring: false, type: GroupCall, number: 26444, anytone: {alertType: None}}
+  - dmr: {id: cont225, name: Multibridge OWL, ring: false, type: GroupCall, number: 26446, anytone: {alertType: None}}
+  - dmr: {id: cont226, name: OWL-Talk, ring: false, type: GroupCall, number: 26447, anytone: {alertType: None}}
+  - dmr: {id: cont227, name: draussenfunker.d, ring: false, type: GroupCall, number: 26486, anytone: {alertType: None}}
+  - dmr: {id: cont228, name: Nordharz, ring: false, type: GroupCall, number: 26538, anytone: {alertType: None}}
+  - dmr: {id: cont229, name: Germany DX, ring: false, type: GroupCall, number: 26577, anytone: {alertType: None}}
+  - dmr: {id: cont230, name: Marines RNLMC, ring: false, type: GroupCall, number: 91665, anytone: {alertType: None}}
+  - dmr: {id: cont231, name: 9-DACH, ring: false, type: GroupCall, number: 93224, anytone: {alertType: None}}
+  - dmr: {id: cont232, name: Global NorCal 51, ring: false, type: GroupCall, number: 95150, anytone: {alertType: None}}
+  - dmr: {id: cont233, name: Red Americas EMC, ring: false, type: GroupCall, number: 97911, anytone: {alertType: None}}
+  - dmr: {id: cont234, name: Reddit, ring: false, type: GroupCall, number: 98003, anytone: {alertType: None}}
+  - dmr: {id: cont235, name: AMSAT, ring: false, type: GroupCall, number: 98006, anytone: {alertType: None}}
+  - dmr: {id: cont236, name: Military Veteran, ring: false, type: GroupCall, number: 98008, anytone: {alertType: None}}
+  - dmr: {id: cont237, name: LBGTQ, ring: false, type: GroupCall, number: 98012, anytone: {alertType: None}}
+  - dmr: {id: cont238, name: Manna/Chowhound, ring: false, type: GroupCall, number: 98080, anytone: {alertType: None}}
+  - dmr: {id: cont239, name: WVNET, ring: false, type: GroupCall, number: 98638, anytone: {alertType: None}}
+  - dmr: {id: cont240, name: H32-Lehrte, ring: false, type: GroupCall, number: 262339, anytone: {alertType: None}}
+  - dmr: {id: cont241, name: Pegasus-Projekt, ring: false, type: GroupCall, number: 262810, anytone: {alertType: None}}
+  - dmr: {id: cont242, name: DM0QN, ring: false, type: GroupCall, number: 262826, anytone: {alertType: None}}
+  - dmr: {id: cont243, name: Region Ingolstad, ring: false, type: GroupCall, number: 262841, anytone: {alertType: None}}
+  - dmr: {id: cont244, name: Amberg, ring: false, type: GroupCall, number: 262872, anytone: {alertType: None}}
+  - dmr: {id: cont245, name: 262993 GPS WX, ring: false, type: GroupCall, number: 262993, anytone: {alertType: None}}
+  - dmr: {id: cont246, name: 262994 RPT DAP, ring: false, type: GroupCall, number: 262994, anytone: {alertType: None}}
+  - dmr: {id: cont247, name: 262995 SMS-C, ring: false, type: GroupCall, number: 262995, anytone: {alertType: None}}
+  - dmr: {id: cont248, name: 262997 Papagei, ring: false, type: PrivateCall, number: 262997, anytone: {alertType: None}}
+  - dmr: {id: cont249, name: 262999 GPS, ring: false, type: GroupCall, number: 262999, anytone: {alertType: None}}
+  - dmr: {id: cont250, name: HiOrg-Talk EmCom, ring: false, type: GroupCall, number: 263112, anytone: {alertType: None}}
+  - dmr: {id: cont251, name: (Un)Wetter Netz, ring: false, type: GroupCall, number: 263113, anytone: {alertType: None}}
+  - dmr: {id: cont252, name: Bahnfreunde, ring: false, type: GroupCall, number: 263301, anytone: {alertType: None}}
+  - dmr: {id: cont253, name: Twitterrunde, ring: false, type: GroupCall, number: 263333, anytone: {alertType: None}}
+  - dmr: {id: cont254, name: Funkerportal, ring: false, type: GroupCall, number: 263815, anytone: {alertType: None}}
+  - dmr: {id: cont255, name: JOTA DL, ring: false, type: GroupCall, number: 263907, anytone: {alertType: None}}
+  - dmr: {id: cont256, name: IG HamSpirit, ring: false, type: GroupCall, number: 264555, anytone: {alertType: None}}
+  - dmr: {id: cont257, name: Notfunk-Deutschl, ring: false, type: GroupCall, number: 265112, anytone: {alertType: None}}
+  - dmr: {id: cont258, name: 9-PLDMO, ring: false, type: GroupCall, number: 975366, anytone: {alertType: None}}
+  - dmr: {id: cont259, name: 9-TETRA, ring: false, type: GroupCall, number: 983872, anytone: {alertType: None}}
+  - dmr: {id: cont260, name: DL1ZAP, ring: false, type: PrivateCall, number: 2628362, anytone: {alertType: None}}
+  - dmr: {id: cont261, name: DL9MAU, ring: false, type: PrivateCall, number: 2630776, anytone: {alertType: None}}
+  - dmr: {id: cont262, name: AllCall, ring: false, type: AllCall, number: 16777215, anytone: {alertType: None}}
+  - dmr: {id: cont263, name: OE7RUB, ring: false, type: PrivateCall, number: 2320699, anytone: {alertType: None}}
+  - dtmf: {id: cont264, name: Region München, ring: false, number: "*91882#"}
+  - dtmf: {id: cont265, name: Oberbayern, ring: false, number: "*91888#"}
+  - dtmf: {id: cont266, name: Region Garmisch, ring: false, number: "*91880#"}
+groupLists:
+  - {id: grp1, name: Hotspot, contacts: [cont7, cont6, cont12]}
+  - {id: grp2, name: DL/Muc, contacts: [cont6, cont7, cont98]}
+  - {id: grp3, name: All DL, contacts: [cont7, cont6, cont12]}
+  - {id: grp4, name: BM, contacts: [cont6, cont7, cont1, cont2, cont3, cont23, cont12, cont15, cont98, cont27, cont28, cont29, cont119, cont87, cont5, cont4, cont90, cont257]}
+  - {id: grp5, name: Notfunk, contacts: [cont90]}
+  - {id: grp6, name: Simplex, contacts: [cont20]}
+channels:
+  - fm:
+      id: ch1
+      name: Template FM
+      rxFrequency: 145.575 MHz
+      txFrequency: 144.975 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone:
+        ctcss: 88.5 Hz
+      txTone:
+        ctcss: 88.5 Hz
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: SubTone
+        scramblerFrequency: 0 Hz
+      power: High
+  - dmr:
+      id: ch2
+      name: Template DMR
+      rxFrequency: 438.8 MHz
+      txFrequency: 431.2 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      admit: Always
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp4
+      contact: cont7
+      extended:
+        talkaround: false
+        privateCallConfirm: false
+        sms: true
+        smsConfirm: false
+        dataConfirm: true
+        dcdm: false
+        loneWorker: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        adaptiveTDMA: false
+        throughMode: false
+        crc: true
+      power: High
+  - fm:
+      id: ch3
+      name: SEA 01
+      rxFrequency: 160.65 MHz
+      txFrequency: 156.05 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch4
+      name: SEA 02
+      rxFrequency: 160.7 MHz
+      txFrequency: 156.1 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch5
+      name: SEA 03
+      rxFrequency: 160.75 MHz
+      txFrequency: 156.15 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch6
+      name: SEA 04
+      rxFrequency: 160.8 MHz
+      txFrequency: 156.2 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch7
+      name: SEA 05
+      rxFrequency: 160.85 MHz
+      txFrequency: 156.25 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch8
+      name: SEA 06 SS
+      rxFrequency: 156.3 MHz
+      txFrequency: 156.3 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch9
+      name: SEA 07
+      rxFrequency: 160.95 MHz
+      txFrequency: 156.35 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch10
+      name: SEA 08 SS
+      rxFrequency: 156.4 MHz
+      txFrequency: 156.4 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch11
+      name: SEA 09
+      rxFrequency: 156.45 MHz
+      txFrequency: 156.45 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch12
+      name: SEA 10
+      rxFrequency: 156.5 MHz
+      txFrequency: 156.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch13
+      name: SEA 11
+      rxFrequency: 156.55 MHz
+      txFrequency: 156.55 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch14
+      name: SEA 12
+      rxFrequency: 156.6 MHz
+      txFrequency: 156.6 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch15
+      name: SEA 13
+      rxFrequency: 156.65 MHz
+      txFrequency: 156.65 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch16
+      name: SEA 14
+      rxFrequency: 156.7 MHz
+      txFrequency: 156.7 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch17
+      name: SEA 15 Bor
+      rxFrequency: 156.75 MHz
+      txFrequency: 156.75 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch18
+      name: SEA 16 Anr
+      rxFrequency: 156.8 MHz
+      txFrequency: 156.8 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch19
+      name: SEA 17 Bor
+      rxFrequency: 156.85 MHz
+      txFrequency: 156.85 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch20
+      name: SEA 18
+      rxFrequency: 161.5 MHz
+      txFrequency: 156.9 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch21
+      name: SEA 19
+      rxFrequency: 161.55 MHz
+      txFrequency: 156.95 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch22
+      name: SEA 20
+      rxFrequency: 161.6 MHz
+      txFrequency: 157 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch23
+      name: SEA 21
+      rxFrequency: 161.65 MHz
+      txFrequency: 157.05 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch24
+      name: SEA 22
+      rxFrequency: 161.7 MHz
+      txFrequency: 157.1 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch25
+      name: SEA 23
+      rxFrequency: 161.75 MHz
+      txFrequency: 157.15 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch26
+      name: SEA 60
+      rxFrequency: 160.625 MHz
+      txFrequency: 156.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch27
+      name: SEA 61
+      rxFrequency: 160.675 MHz
+      txFrequency: 156.075 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch28
+      name: SEA 62
+      rxFrequency: 160.725 MHz
+      txFrequency: 156.125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch29
+      name: SEA 63
+      rxFrequency: 160.775 MHz
+      txFrequency: 156.175 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch30
+      name: SEA 64
+      rxFrequency: 160.825 MHz
+      txFrequency: 156.225 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch31
+      name: SEA 65
+      rxFrequency: 160.875 MHz
+      txFrequency: 156.275 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch32
+      name: SEA 66
+      rxFrequency: 160.925 MHz
+      txFrequency: 156.325 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch33
+      name: SEA 67
+      rxFrequency: 156.375 MHz
+      txFrequency: 156.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch34
+      name: SEA 68
+      rxFrequency: 156.425 MHz
+      txFrequency: 156.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch35
+      name: SEA 69 SS
+      rxFrequency: 156.475 MHz
+      txFrequency: 156.475 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch36
+      name: SEA 70 DSC
+      rxFrequency: 156.525 MHz
+      txFrequency: 156.525 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch37
+      name: SEA 71
+      rxFrequency: 156.575 MHz
+      txFrequency: 156.575 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch38
+      name: SEA 72 SS
+      rxFrequency: 156.625 MHz
+      txFrequency: 156.625 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch39
+      name: SEA 73
+      rxFrequency: 156.675 MHz
+      txFrequency: 156.675 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch40
+      name: SEA 74
+      rxFrequency: 156.725 MHz
+      txFrequency: 156.725 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch41
+      name: SEA 75 Nav
+      rxFrequency: 156.775 MHz
+      txFrequency: 156.775 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch42
+      name: SEA 76 Nav
+      rxFrequency: 156.825 MHz
+      txFrequency: 156.825 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch43
+      name: SEA 77 SS
+      rxFrequency: 156.875 MHz
+      txFrequency: 156.875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch44
+      name: SEA 78
+      rxFrequency: 161.525 MHz
+      txFrequency: 156.925 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch45
+      name: SEA 79
+      rxFrequency: 161.575 MHz
+      txFrequency: 156.975 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch46
+      name: SEA 80
+      rxFrequency: 161.625 MHz
+      txFrequency: 157.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch47
+      name: SEA 81
+      rxFrequency: 161.675 MHz
+      txFrequency: 157.075 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch48
+      name: SEA 82
+      rxFrequency: 161.725 MHz
+      txFrequency: 157.125 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch49
+      name: SEA 87
+      rxFrequency: 157.375 MHz
+      txFrequency: 157.375 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch50
+      name: SEA 88
+      rxFrequency: 157.425 MHz
+      txFrequency: 157.425 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch51
+      name: APRS 2m
+      rxFrequency: 144.8 MHz
+      txFrequency: 144.8 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch52
+      name: APRS 70cm
+      rxFrequency: 432.5 MHz
+      txFrequency: 432.5 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone: ~
+      bandwidth: Narrow
+      extended:
+        talkaround: false
+        reverseBurst: false
+      anytone:
+        frequencyCorrection: 0
+        handsFree: false
+        aprsPTT: Off
+        rxCustomCTCSS: false
+        txCustomCTCSS: false
+        customCTCSS: 0
+        squelchMode: Carrier
+        scramblerFrequency: 0 Hz
+      power: High
+  - fm:
+      id: ch53
+      name: C23-2m
+      rxFrequency: 144.5875 MHz
+      txFrequency: 144.5875 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 123.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      power: !<!default> ""
+  - fm:
+      id: ch54
+      name: C23-70cm
+      rxFrequency: 433.025 MHz
+      txFrequency: 433.025 MHz
+      timeout: !<!default> ""
+      rxOnly: false
+      vox: !<!default> ""
+      squelch: !<!default> ""
+      admit: Always
+      rxTone: ~
+      txTone:
+        ctcss: 123.0 Hz
+      bandwidth: Wide
+      extended:
+        talkaround: false
+        reverseBurst: false
+      power: !<!default> ""
+zones:
+  - id: zone1
+    name: Seefunk
+    A: [ch3, ch4, ch5, ch6, ch7, ch8, ch9, ch10, ch11, ch12, ch13, ch14, ch15, ch16, ch17, ch18, ch19, ch20, ch21, ch22, ch23, ch24, ch25, ch26, ch27, ch28, ch29, ch30, ch31, ch32, ch33, ch34, ch35, ch36, ch37, ch38, ch39, ch40, ch41, ch42, ch43, ch44, ch45, ch46, ch47, ch48, ch49, ch50]
+    B: []
+    anytone:
+      hidden: false
+  - id: zone2
+    name: C23-direkt
+    A: [ch53, ch54]
+    B: []
+positioning:
+  - aprs:
+      id: aprs1
+      name: APRS APN000
+      revert: ch51
+      icon: Rover
+      message: Hunderunde
+      anytone:
+        txDelay: 60 ms
+        preWaveDelay: 0
+        passAll: false
+        reportPosition: false
+        reportMicE: false
+        reportObject: false
+        reportItem: false
+        reportMessage: false
+        reportWeather: false
+        reportNMEA: false
+        reportStatus: false
+        reportOther: false
+        frequencies:
+          []
+      period: 2010 s
+      destination: APN000-0
+      source: DA1TH-7
+      path: [WIDE1-1, WIDE2-1]
+roamingChannels:
+  - id: rch1
+    name: Roaming CH 1
+    rxFrequency: 410.2125 MHz
+    txFrequency: 418.2125 MHz
+  - id: rch2
+    name: Roaming CH 2
+    rxFrequency: 410.3125 MHz
+    txFrequency: 418.3125 MHz
+  - id: rch3
+    name: Roaming CH 3
+    rxFrequency: 410.4125 MHz
+    txFrequency: 418.4125 MHz
+  - id: rch4
+    name: Roaming CH 4
+    rxFrequency: 410.1125 MHz
+    txFrequency: 418.1125 MHz
+roamingZones:
+  - id: roam1
+    name: Roam Zone 1
+    channels:
+      - rch1
+      - rch2
+      - rch3
+      - rch4
+commercial:
+  encryptionKeys:
+    []
+sms:
+  format: Motorola
+  templates:
+    []
+...
