@@ -1,0 +1,67 @@
+User-Agent: OpenGD77 channel creator 0.1, <callsign@darc.de>
+API-Token: app_mytoken
+FM-Bandwidth: Wide          # Default FM-Bandwidth if not defined (Small or Wide)
+TS1-TA: APRS                # Timeslot 1 DMR Talker Alias (Off, APRS, Text, APRS+Text)
+TS2-TA: APRS                # Timeslot 2 DMR Talker Alias (Off, APRS, Text, APRS+Text)
+CP-Template: dt878uv2-sample.yaml   # Codeplug-Template file
+KEEP-ZONES: [Seefunk, C23-direkt]
+Zones:
+  DL:
+    Mode: Load                  # Should be 'Default', 'Load' or 'Dump'
+    Country: Germany            # Country name is used for Repeatermap query, must match there
+    Regions:                    # List of regions in given country
+      VR:
+        Latitude: 54.2038585    # Center of repeater search circle, lat and lon
+        Longitude: 12.8183909
+        MaxDistance: 100        # Radius of search circle in kilometers
+      LL:
+        Latitude: 48.0606517
+        Longitude: 11.0412388
+        MaxDistance: 150
+      DEL:
+        Latitude: 53.0480083
+        Longitude: 8.562678
+        MaxDistance: 100
+      ZR:
+        Latitude: 50.6681604
+        Longitude: 11.8988321
+        MaxDistance: 100
+  SP:
+    Mode: Load
+    Country: Poland
+    Regions:
+      Swinemuende:
+        Latitude: 53.9109417
+        Longitude: 14.2694135
+        MaxDistance: 100
+  OZ:
+    Mode: Load
+    Country: Denmark
+    Regions:
+      Klintholm:
+        Latitude: 54.9524922
+        Longitude: 12.4666164
+        MaxDistance: 100
+  SM:
+    Mode: Load
+    Country: Sweden
+    Regions:
+      Trelleborg:
+        Latitude: 55.4377801
+        Longitude: 13.2224797
+        MaxDistance: 100    
+  OE:
+    Mode: Load
+    Country: Austria
+    Regions:
+      Inzing:
+        Latitude: 47.2713648
+        Longitude: 11.1999975
+        MaxDistance: 100    
+CSV-Import:
+  Free:
+    Path: CSV-free/Channels.csv
+  Simplex:
+    Path: CSV-Simplex/Channels.csv
+  Hotspot:
+    Path: Hotspot/Channels.csv
