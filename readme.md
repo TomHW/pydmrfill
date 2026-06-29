@@ -30,7 +30,9 @@ The "src" directory should also be copied to the current directory. The file "py
 deactivate
 ```
 
-Next, the codeplug should be read from the target device using qdmr. Preferred settings can be configured on the device itself or within qdmr beforehand; however, dependencies on specific channels and zones should be avoided. The codeplug from the device may also be empty. It is advisable to create two template channels—one for FM and one for DMR. These channels must begin with the string "Template". If these templates are missing, the program's built-in static templates will be used instead. These templates allow for the configuration of talkgroups, channel bandwidths, squelch settings, transmit power, APRS beacons, etc. The name and location of this template codeplug are passed to the program as parameters (see below).
+Next, the codeplug should be read from the target device using qdmr. Preferred settings can be configured on the device itself or within qdmr beforehand; however, dependencies on specific channels and zones should be avoided. The codeplug from the device may also be empty. It is advisable to create two template channels—one for FM and one for DMR. These channels must begin with the string "Template". If these templates are missing, the program's built-in static templates will be used instead. These templates allow for the configuration of talkgroups, channel bandwidths, squelch settings, transmit power, APRS beacons, etc. The name and location of this template codeplug are passed to the program as parameters (see below), don't forget to update the configuration.
+
+Then you should request an [Access-Token from Repeaterbook](https://www.repeaterbook.com/api/token_request.php?step=form&choose_model=1). Add your Token to the configuration (see below).
 
 ## Usage
 
